@@ -1,0 +1,28 @@
+[
+	{ "keys": ["alt+c"], "command": "get_path" },
+	{ "keys": ["alt+f"], "command": "file" },
+	{ "keys": ["alt+x"], "command": "focus_side_bar" },
+
+	{ "keys": ["alt+w"], "command": "move", "args": {"by": "lines", "forward": false} },
+	{ "keys": ["alt+s"], "command": "move", "args": {"by": "lines", "forward": true} },
+	{ "keys": ["alt+a"], "command": "move", "args": {"by": "words", "forward": false} },
+	{ "keys": ["alt+d"], "command": "move", "args": {"by": "word_ends", "forward": true} },
+	{ "keys": ["alt+q"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["alt+e"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+	{ "keys": ["alt+shift+w"], "command": "move", "args": {"by": "lines", "forward": false, "extend": true} },
+	{ "keys": ["alt+shift+s"], "command": "move", "args": {"by": "lines", "forward": true, "extend": true} },
+	{ "keys": ["alt+shift+a"], "command": "move", "args": {"by": "subwords", "forward": false, "extend": true} },
+	{ "keys": ["alt+shift+d"], "command": "move", "args": {"by": "subword_ends", "forward": true, "extend": true} },
+	{ "keys": ["alt+shift+q"], "command": "move_to", "args": {"to": "bol", "extend": true} },
+	{ "keys": ["alt+shift+e"], "command": "move_to", "args": {"to": "eol", "extend": true} },
+
+	{ "keys": ["alt+ctrl+w"], "command": "swap_line_up" },
+	{ "keys": ["alt+ctrl+s"], "command": "swap_line_down" },
+	{ "keys": ["alt+ctrl+q"], "command": "select_lines", "args": {"forward": false} },
+	{ "keys": ["alt+ctrl+e"], "command": "select_lines", "args": {"forward": true} },
+
+	{ "keys": ["alt+`"], "command": "toggle_terminus_panel", "args": {"cwd": "${file_path:${folder}}"}},
+	{ "keys": ["alt+z"], "command": "terminus_open", "args": {"cwd": "${file_path:${folder}}"}},
+	{ "keys": ["alt+x"], "command": "terminus_close", "context": [{ "key": "terminus_view"}]},
+]
